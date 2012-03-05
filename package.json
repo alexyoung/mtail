@@ -1,0 +1,35 @@
+{
+  "name": "mtail",
+  "description": "Tail multiple files",
+  "version": "0.0.1",
+  "author": "Alex R. Young <a@alexyoung.org>",
+  "dependencies": {
+    "commander": "0.4.1"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "directories": {
+    "man": "./doc/man",
+    "lib": "./lib",
+    "bin": "./bin"
+  },
+  "keywords": ["console", "command-line", "tail"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexyoung/mtail"
+  },
+  "bugs": {
+    "url": "http://github.com/alexyoung/mtail/issues"
+  },
+  "main": "index",
+  "bin": { "mtail": "./bin/mtail" },
+  "engines": { "node": ">= 0.5.0 < 0.7.0" },
+  "scripts": { "test": "make test" },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/alexyoung/mtail/raw/master/LICENSE"
+    }
+  ]
+}

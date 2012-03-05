@@ -1,0 +1,85 @@
+.TH MTAIL "1" "2012" "" ""
+
+
+.SH "NAME"
+mtail \- Tail multiple files at once
+
+.SH SYNOPSIS
+
+
+.B mtail
+[
+.B \-V
+]
+[
+.B \-e
+|
+.B \-\-encoding
+.I encoding
+]
+[
+.B \-n
+.I number
+]
+[
+.B \-p
+|
+.B \-\-print\-file
+.I file\-name
+]
+[
+.B \-s
+|
+.B \-\-sleep\-interval
+.I sleep\-interval
+]
+[
+.B \-t
+|
+.B \-\-truncate
+.I length
+]
+[
+.I file ...
+]
+.br
+
+.SH DESCRIPTION
+
+The mtail utility displays the contents of multiple files.
+
+.SH OPTIONS
+.PP
+\-V, \-\-version
+.RS 4
+Prints the version of the program\&.
+.RE
+.PP
+\-\-help
+.RS 4
+Prints the synopsis and a list of the most commonly used commands\&.
+.RE
+.PP
+\-e, \-\-encoding <encoding>
+.RS 4
+Sets the encoding of the input streams.  Defaults to 'utf8'\&.
+.RE
+.PP
+\-n <number>
+.RS 4
+Number of lines to print from the file.  Defaults to 10\&.
+.RE
+.PP
+\-p, \-\-print\-file
+.RS 4
+Print the file name before each line\&.
+.RE
+.PP
+\-s, \-\-sleep\-interval <milliseconds>
+.RS 4
+Sets the number of milliseconds to check for file changes on systems that don't support inotify.  Defaults to 100\&.
+.RE
+.PP
+\-t, \-\-truncate <length>
+.RS 4
+Truncates the file name to <length>.  If no length is supplied, the file's basename will be displayed\&.

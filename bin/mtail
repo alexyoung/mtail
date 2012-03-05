@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var mtail = require(__dirname + '/../index');
+mtail.handleOptions();
